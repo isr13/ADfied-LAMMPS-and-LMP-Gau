@@ -1,0 +1,31 @@
+# . atomic information
+units		real
+newton 		on
+atom_style      molecular
+bond_style      harmonic
+read_data	data.mm
+
+
+
+# . neighbor list and charge equilibration
+neighbor	500 bin
+neigh_modify	every 1 delay 0 check no one 5000 page 1000000
+
+compute peratom all pe/atom
+
+
+# . simulation setup
+timestep 0.0001
+thermo		1
+thermo_style custom step temp density pe evdwl ecoul epair elong ebond eangle edihed eimp etail ke etotal
+
+fix 1 all nvt temp 300.0 300.0 100.0
+
+
+#thermo_style	custom step temp pe press density
+
+dump	    1 all custom 1 dump.bond id type fx fy fz
+
+
+
+run 1

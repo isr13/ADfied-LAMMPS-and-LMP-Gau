@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/src/STUBS/mpi.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+stdint.h
+-
+sys/time.h
+-
+mpi.h
+-
+../version.h
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/src/version.h
+
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/src/STUBS/mpi.h
+stdlib.h
+-
+
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/src/version.h
+

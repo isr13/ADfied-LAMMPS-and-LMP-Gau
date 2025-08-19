@@ -1,0 +1,7 @@
+LAMMPS (7 Aug 2019)
+# . atomic information
+units		real
+newton on
+atom_style      molecular
+ERROR: Unrecognized atom style 'molecular' is part of the MOLECULE package, but seems to be missing because of a dependency (../atom.cpp:512)
+Last command: atom_style      molecular

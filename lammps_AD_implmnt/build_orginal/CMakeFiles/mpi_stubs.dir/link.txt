@@ -1,0 +1,2 @@
+/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/skylake_avx512/software/binutils/2.38-GCCcore-8.3.0/bin/ar qc libmpi_stubs.a "CMakeFiles/mpi_stubs.dir/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/src/STUBS/mpi.c.o"
+/cvmfs/software.hpc.rwth.de/Linux/RH8/x86_64/intel/skylake_avx512/software/binutils/2.38-GCCcore-8.3.0/bin/ranlib libmpi_stubs.a

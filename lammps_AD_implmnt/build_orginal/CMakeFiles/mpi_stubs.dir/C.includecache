@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/em181266/lammps_with_python/src/STUBS/mpi.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+stdint.h
+-
+sys/time.h
+-
+mpi.h
+-
+../version.h
+/home/em181266/lammps_with_python/src/version.h
+
+/home/em181266/lammps_with_python/src/STUBS/mpi.h
+stdlib.h
+-
+
+/home/em181266/lammps_with_python/src/version.h
+

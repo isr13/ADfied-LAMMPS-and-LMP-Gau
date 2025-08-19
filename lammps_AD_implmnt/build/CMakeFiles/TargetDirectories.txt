@@ -1,0 +1,10 @@
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/mpi_stubs.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/gitversion.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/lmp.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/install-python.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/edit_cache.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/rebuild_cache.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/list_install_components.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/install.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/install/local.dir
+/work/ir835194/AD-CTY-TAD/lammps_AD_implmnt/build/CMakeFiles/install/strip.dir
