@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>NAG DCL6I34NGL Installer's Note</title>
+</head>
+<body bgcolor="white">
+
+
+        <!-- TITLES -->
+
+<center>
+<h3>NAG dco/c++ version 3.4</h3>
+<h3>DCL6I34NGL
+- Licence Managed
+</h3>
+<h3>Linux, 64-bit</h3>
+
+<h3>Installer's Note</h3>
+
+        <!-- Contents -->
+
+<br>
+<br>
+<h3>Contents</h3>
+</center>
+
+<ul>
+<li><a href="#introduction">1. Introduction</a><br><br>
+<li><a href="#implementation">2. Implementation Provided</a>
+<p>
+<ul>
+<li><a href="#applicability">2.1. Applicability</a>
+<li><a href="#supplementary">2.2. Supplementary Information</a>
+</ul>
+
+<p>
+<li><a href="#distribution">3. Distribution</a>
+<p>
+<ul>
+<li><a href="#contents">3.1. Contents</a>
+</ul>
+
+<p>
+<li><a href="#installation">4. Installation</a>
+<p>
+<ul>
+<li><a href="#dcoinst">4.1. Normal Installation</a>
+<li><a href="#silent">4.2. Silent Installation</a>
+<li><a href="#licence">4.3. Licence Management</a>
+</ul>
+<p>
+<li><a href="#examples">5. Example Programs</a>
+<p>
+  <ul>
+    <li><a href="#commandline">5.1. Running from a command line</a>
+  </ul>
+<p>
+<li><a href="#support">6. Support from NAG</a>
+<p>
+<li><a href="#contact">7. Contact Addresses</a>
+</ul>
+
+        <!-- 1. Introduction -->
+
+<br>
+<h3><a name="introduction">1. Introduction</a></h3>
+
+This document provides implementation-specific information relating to
+the installation of dco/c++.
+	<p>
+
+        <!-- 2. Implementation Provided -->
+
+<h3><a name="implementation">2. Implementation Provided</a></h3>
+
+        <!-- 2.1. Applicability -->
+
+<h4><a name="applicability">2.1. Applicability</a></h4>
+
+<p>
+This implementation is considered suitable for operation on the computer
+systems detailed below:
+
+<pre>
+hardware:          Intel 64-bit systems and compatible
+operating system:  Linux 64-bit editions
+C++ compiler:      Any GNU compatible compiler with GLIBC version > 2.15
+
+</pre>
+
+        <!-- 2.2. Supplementary Information -->
+
+<h4><a name="supplementary">2.2. Supplementary Information</a></h4>
+
+<p>
+Please check the following URL:
+<p>
+<a href="https://www.nag.co.uk/doc/inun/dc34/l6ingl/supplementary.html">
+  https://www.nag.co.uk/doc/inun/dc34/l6ingl/supplementary.html</a>
+
+<p>
+for details of any new information related to the
+applicability or usage of this implementation.
+Details of any other systems on
+which it has been tested may also be found on this page.
+
+        <!-- 3. Distribution -->
+
+<h3><a name="distribution">3. Distribution</a></h3>
+
+ The software is available to download from any of the NAG websites
+ (see <a href="#contact">Section 6</a> for contact details).
+
+        <!-- 3.1. Contents -->
+
+<h4><a name="contents">3.1. Contents</a></h4>
+
+The following shows the folder and file organization of the implementation
+materials after installation:
+
+<pre>
+            |- doc -|- in.html  (Installer's Note - this document)
+            |       |- userguide.pdf (User Guide as pdf)
+            |       |- licence -|- *  (licence management documentation)
+	    |
+	    |- bin -|- (licence management tools)
+dcl6i34ngl -|
+	    |
+	    |- include -|- *.hpp  (C++ header files)
+            |
+            |- examples -|- (directories containing various example programs
+            |            |   from the dco/c++ user guide, along with Makefiles)
+            |
+            |- case_studies -|- (more sophisticated examples from the dco/c++
+            |                |   user guide)
+            |
+            |- lib -| libdcoc.a
+</pre>
+
+        <!-- 4. Installation -->
+
+<h3><a name="installation">4. Installation</a></h3>
+
+        <!-- 4.1. Normal Installation -->
+
+<h4><a name="dcoinst">4.1. Normal Installation</a></h4>
+<p>
+Assuming you have downloaded the dco/c++ installer from our website, extract the installation materials using the following command:
+</p>
+<pre>
+  tar xvzf dcl6i34ngl.tgz
+</pre>
+<p>
+This will extract the files install.sh, dcl6i34ngl.tar.gz and nag_tsandcs.txt.
+</p>
+<p>
+You can then install the materials from the download directory by executing the shell script install.sh in a command window as:
+</p>
+<pre>
+  ./install.sh
+</pre>
+
+<p>
+By default, the dco/c++ materials are installed in
+<pre>
+  ${HOME}/NAG/dcl6i34ngl
+</pre>
+or the equivalent for your locale.
+
+
+        <!-- 4.2. Silent Installation -->
+
+<h4><a name="silent">4.2. Silent Installation</a></h4>
+
+It is also possible to run <tt>install.sh</tt>
+in unattended or silent modes. The installer takes command
+line switches for this purpose:
+<ul>
+  <li><tt>-silent</tt>
+    <br>
+    means perform a silent installation.  In this case, the <tt>-accept</tt> and
+     <tt>-installdir</tt> switches must also be used
+  <li><tt>-accept</tt>
+    <br>
+    means that you accept the NAG licence agreement
+  <li><tt>-installdir=DIR</tt>
+    <br>
+    means that the library will be installed under directory <tt>DIR</tt>
+</ul>
+
+
+        <!-- 4.3. Licence Management -->
+
+<h4><a name="licence">4.3. Licence Management</a></h4>
+
+The use of this product is controlled by the Kusari licence
+management system. This release of dco/c++ uses version
+2.2-88 of Kusari.
+
+<p>
+In order to enable the software, NAG will issue you with a licence key.
+The licence key is contained in a text file consisting of details of
+the software that will be enabled.
+For evaluation purposes a trial licence may be used.
+
+For more details on how to install the licence, please see respective subdirectory after installation.
+        <!-- 5. Example Programs -->
+
+<h4><a name="examples">5. Example Programs</a></h4>
+
+Access to the dco/c++ materials can be checked by running a few example
+programs following the advice given below.
+(Detailed documentation on dco/c++ and examples is located in the User Guide
+which can be found in the
+<tt>dcl6i34ngl/doc</tt>
+directory).
+
+<h4><a name="commandline">5.1. Running from a 
+     command line</a></h4>
+        <!-- 5.1. DOS command line -->
+<ul>
+  <li> Open a command line
+  <li> Go to the examples directory and type <tt>make</tt>
+    to compile and run all the
+    available examples from the user guide
+  <li> To run examples individually, change to a subdirectory containing the example
+    you are interested in and type <tt>make</tt>
+    to compile and run that example
+</ul>
+
+The output of the <tt>make</tt> command shows the compilation and link
+options used to produce each executable program. In addition, results of
+running the program are compared with reference results. Note that there
+may be small differences between observed and reference results, depending
+on the environment.
+<p>
+More sophisticated examples (case studies) are located in folders
+<ul>
+  <li> case_studies\diffusion
+  <li> case_studies\mc
+  <li> case_studies\pde
+  <li> case_studies\race
+</ul>
+To run all these examples change directory to the <tt>case_studies</tt> folder
+and type <tt>make</tt>. This will compile all examples located in the folder.
+Again, to run an example individually change to a
+subdirectory with the example of your choice and type <tt>make</tt>.
+
+
+        <!-- 6. Support from NAG -->
+
+<h3><a name="support">6. Support from NAG</a></h3>
+
+Please see
+<p>
+<a href="http://www.nag.co.uk/content/nag-technical-support-service">http://www.nag.co.uk/content/nag-technical-support-service</a>
+<p>
+for information about the NAG Technical Support Service, including
+details of the NAG Technical Support Service contact points.
+We would also be delighted to receive your feedback on NAG's products
+and services.
+
+        <!-- 7. Contact Addresses -->
+
+<h3><a name="contact">7. Contact Addresses</a></h3>
+
+Please see
+<p>
+<a href="http://www.nag.co.uk/content/worldwide-contact-information">http://www.nag.co.uk/content/worldwide-contact-information</a>
+<p>
+for worldwide contact details for the Numerical Algorithms Group.
+
+</body>
+</html>

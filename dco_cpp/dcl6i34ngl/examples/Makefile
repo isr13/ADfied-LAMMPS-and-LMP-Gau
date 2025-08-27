@@ -1,0 +1,13 @@
+SUBDIRS= gt2s_ga1s_preaccumulation_gradient_t ga1s_preaccumulation_gradient_t ga1s fd_ga1s ga1sm gt2s_ga1s gt1s_nonlinear_smoothing gt1s ga1s_user_defined_adjoint gv gt1s_linear_smoothing gv_gt1s_mask ga1s_scenarios gt2s_ga1s_preaccumulation ga1s_tape_data_types gt3s_gt2s_gt1s gt2s_ga1s_joint ga1s_joint ga1s_recursive_recompute_all gt2s_ga1s_external_manual gt1v gt2s_gt1s gt2s_ga1s_cp_loop_rec ga1s_multiple_adjoint_vectors gt3s_gt2s_ga1s gt1s_Jacobian ga1s_acm ga1s_recompute_all ga1sm_user_defined_adjoint gt1s_fd_smoothing gt2s_ga1s_multiple_adjoint_vectors ga2s_ga1s ga1s_cp_loop_rec gv_ga1s_mask gv_ga1s gt2s_ga1s_ensemble ga1v ga1s_ensemble ga1s_Jacobian gt1s_user_defined_tangent sparse_interpret gbcp ga1s_mod p1f ga1s_preaccumulation gv_gt1s gv_mask ga1s_reverse_accumulation_newton gt2s_gt1s_Hessian ga1s_external_manual gt2s_ga1s_jacobian_preaccumulation ga1s_jacobian_preaccumulation gt2s_ga1s_cp_loop_equidist ga1vm gt2s_ga1s_user_defined_adjoint gt2s_ga1s_Hessian ga1s_cp_loop_equidist ga1s_reverse_accumulation_simple_exp ga1s_reverse_accumulation_simple_sqrt ga2s_gt1s
+
+default: all
+
+$(SUBDIRS)::
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+all : $(SUBDIRS)
+run : $(SUBDIRS)
+check : $(SUBDIRS)
+clean : $(SUBDIRS)
+generate_results : $(SUBDIRS)
+
