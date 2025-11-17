@@ -1,0 +1,17 @@
+This is step by step instruction to use ADfied LAMMPS
+
+ADfied-LAMMPS
+
+1. Download the source file from the folder lammps_AD_implmnt
+2. Compile the ADfied LAMMPS as follows and then it is ready to use
+
+cd /lammps_directory/cmake/build/
+export NAG_KUSARI_FILE=/location/nag_key.txt
+make -C /lammps_directory/src no-all purge
+rm CMakeCache.txt
+cmake ../cmake -D BUILD_SHARED_LIBS=ON -D LAMMPS_MACHINE=serial -D CMAKE_INSTALL_PREFIX=$VIRTUAL_EN -D PKG_MOLECULE=ON -D PKG_USER-REAXC=ON -D BUILD_MPI=OFF -D WITH_GZIP=OFF -D WITH_FFMPEG=OFF -D BUILD_OMP=OFF
+cmake –build .
+/..cmake
+
+3. Compilation and running ADfied LAMMPS is similar to that for standard LAMMPS. Hence for further help please consider the user guide at LAMMPS website: https://docs.lammps.org/#user-guide
+
