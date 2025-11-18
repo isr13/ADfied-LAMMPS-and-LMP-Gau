@@ -1,0 +1,16 @@
+%chk=gau_bond.chk
+# freq uff=(print,uncharged,SoftOnly) geom=connectivity nosymmetry
+
+Title Card Required
+
+0 1
+ O-O_2             1.00000000    0.00000000    0.00000000
+ O-O_2             0.00000000    0.00000000    0.00000000
+
+ 1 2 2.0
+ 2
+ 
+ HrmStr1 * * 40.0 1.2
+ NonBon 0 0 0 0 0.0 0.0 0.0 0.0 0.0 0.0
+
+

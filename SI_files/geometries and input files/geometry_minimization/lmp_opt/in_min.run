@@ -1,0 +1,31 @@
+# . atomic information
+units		electron
+atom_style      charge
+boundary p p p
+read_data	dioxolane.data
+
+# . atomic interaciton: ReaxFF
+
+pair_style	reax/c NULL mincap 2000 safezone 1.5
+pair_coeff	* * Ashraf2017.ff H C O
+
+#atom_modify sort 0.0 0.0
+
+fix qeq all qeq/reax 1 0.0 10.0 1e-6 reax/c
+neighbor 10 bin
+neigh_modify every 1 delay 0 check no
+
+minimize    1.0e-15 1.0e-15 10000 100000
+
+timestep 0.00000001
+
+#prints total potential energy of the system on screen
+thermo		1
+thermo_style custom step pe
+
+#prints atom_id atom_type coordinates_in_3d potential_energy forces_in_3d
+dump	    2 all custom 1 dump.all fx fy fz x y z
+dump_modify 2 sort id
+
+run 1
+

@@ -1,0 +1,10 @@
+%chk=mol.chk
+%nproc=1
+#P freq symmetry=none external='./gau_lmp.sh'
+
+Title Card Required
+
+0 1
+ O-O_2             1.00000000    0.00000000    0.00000000
+ O-O_2             0.00000000    0.00000000    0.00000000
+
