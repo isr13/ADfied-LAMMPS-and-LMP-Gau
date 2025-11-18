@@ -1,0 +1,5 @@
+This is a step-by-step instruction to use LMP_Gau, the integration between Gaussian and LAMMPS
+
+1. In the bash script, edit the correct location of the LAMMPS folder
+2. Paste the Python scripts and executables from Fortran scripts in the same folder as the bash script.
+3. Run the Gaussian input file. The Gaussian input file should contain the following keywords: nosym external='./gau_lmp.sh'. Many examples of Gaussian input files can be found in the "SI_files" folder.
