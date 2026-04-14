@@ -1,5 +1,6 @@
 # UPDATED VERSION CAN BE FOUND HERE: https://git-ce.rwth-aachen.de/ltt/adfied-lammps-and-lmp-gau
 
+#Publication: https://pubs.acs.org/doi/10.1021/acs.jctc.6c00163
 
 # ADfied-LAMMPS-and-LMP-Gau
 
