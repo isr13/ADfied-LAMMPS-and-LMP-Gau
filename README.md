@@ -1,4 +1,4 @@
-*UPDATED VERSION CAN BE FOUND HERE: https://git-ce.rwth-aachen.de/ltt/adfied-lammps-and-lmp-gau*
+# UPDATED VERSION CAN BE FOUND HERE: https://git-ce.rwth-aachen.de/ltt/adfied-lammps-and-lmp-gau
 
 
 # ADfied-LAMMPS-and-LMP-Gau
