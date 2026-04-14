@@ -1,3 +1,6 @@
+*UPDATED VERSION CAN BE FOUND HERE: https://git-ce.rwth-aachen.de/ltt/adfied-lammps-and-lmp-gau*
+
+
 # ADfied-LAMMPS-and-LMP-Gau
 
 This repository provides all the codes for ADfied LAMMPS and LMP-Gau, as well as the geometry and input files used in the publication.
